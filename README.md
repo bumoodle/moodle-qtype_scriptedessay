@@ -6,8 +6,8 @@ Authored by Kyle Temkin, working for Binghamton University <http://www.binghamto
 
 To install Moodle 2.1+ using git, execute the following commands in the root of your Moodle install:
 
-    git clone git://github.com/ktemkin/moodle-qtype_scriptedessay.git question/type/waveform
-    echo '/question/type/waveform' >> .git/info/exclude
+    git clone git://github.com/ktemkin/moodle-qtype_scriptedessay.git question/type/scriptedessay
+    echo '/question/type/scriptedessay' >> .git/info/exclude
 
 Or, extract the following zip in your_moodle_root/question/type/:
 

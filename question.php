@@ -43,8 +43,6 @@ class qtype_scriptedessay_question extends qtype_essay_question
      */
     public function start_attempt(question_attempt_step $step, $variant)
     {
-        print_object($this);
-
         list($errors, $vars, $funcs) = qtype_scripted_question::execute_script($this->init_code, $this->questiontext);
 
         //store the list of variables after the execution, for storage in the database
