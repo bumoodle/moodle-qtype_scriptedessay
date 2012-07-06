@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="question/type/essay/db" VERSION="20120706" COMMENT="XMLDB file for Moodle question/type/scriptedessay"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="question_scriptedessay" COMMENT="Extra data for essay questions which have been extended to support randomization">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="question"/>
+        <FIELD NAME="question" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="false" SEQUENCE="false" COMMENT="question id" PREVIOUS="id" NEXT="init_code"/>
+        <FIELD NAME="init_code" TYPE="text" LENGTH="medium" NOTNULL="false" SEQUENCE="false" COMMENT="The question initialization code for a scripted essay question type" PREVIOUS="question"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>
