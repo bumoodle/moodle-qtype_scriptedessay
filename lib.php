@@ -31,8 +31,8 @@ defined('MOODLE_INTERNAL') || die();
 /**
  * Checks file access for essay questions.
  */
-function qtype_essay_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload) {
+function qtype_scriptedessay_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload) {
     global $CFG;
     require_once($CFG->libdir . '/questionlib.php');
-    question_pluginfile($course, $context, 'qtype_essay', $filearea, $args, $forcedownload);
+    question_pluginfile($course, $context, 'qtype_scriptedessay', $filearea, $args, $forcedownload);
 }
