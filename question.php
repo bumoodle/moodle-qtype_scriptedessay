@@ -68,7 +68,7 @@ class qtype_scriptedessay_question extends qtype_essay_question
      * Inserts the varaibles for the given question text, then calls the basic formatter.
      * 
      */
-	public function format_questiontext(question_attempt $qa)
+    public function format_questiontext($qa)
 	{
 		//get a list of varaibles created by the initialization MathScript 
 		$vars = qtype_scripted_question::safe_unserialize($qa->get_last_qt_var('_vars'));
