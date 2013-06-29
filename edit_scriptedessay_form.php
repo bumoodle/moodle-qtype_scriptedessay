@@ -27,7 +27,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 require_once($CFG->dirroot.'/question/type/essay/edit_essay_form.php');
-require_once($CFG->dirroot.'/question/type/scripted/edit_scripted_form.php');
+require_once($CFG->dirroot.'/question/type/scripted/lib.php');
 
 /**
  * Scripted Essay editing form.
@@ -47,7 +47,7 @@ class qtype_scriptedessay_edit_form extends qtype_essay_edit_form
         parent::definition_inner($mform);
         
         //add an initialization code editor
-        qtype_scripted_edit_form::insert_editor($mform);
+        $mform->addElement('scripteditor', 'init_code', get_string('initscript', 'qtype_scripted'));
     }
 
     /**

@@ -47,8 +47,6 @@ class qtype_scriptedessay_renderer extends qtype_essay_renderer {
 
         $output = array();
 
-        print_object($files);
-
         foreach ($files as $file) {
 
             switch($file->get_mimetype()) {
